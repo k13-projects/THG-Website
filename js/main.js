@@ -465,8 +465,24 @@ function initMap() {
                     type: 'standalone',
                     description: 'Healthy Eats & Smoothies',
                     instagram: 'https://www.instagram.com/lavida.sandiego/',
-                    website: 'https://lavidasandiego.com/',
+                    website: 'https://lavida.fit/',
                     logo: 'assets/logos/lavida.png'
+                }
+            ]
+        },
+        {
+            // Oceanside - Cosmos Burger
+            coords: [33.1959, -117.3795],
+            groupName: 'Oceanside',
+            address: '208 N Coast Hwy, Oceanside, CA',
+            locations: [
+                {
+                    title: 'Cosmos Burger',
+                    type: 'standalone',
+                    description: 'Premium Burgers',
+                    instagram: 'https://www.instagram.com/burger.cosmos/',
+                    website: 'https://cosmosburger.com/',
+                    logo: 'assets/logos/cosmos.png'
                 }
             ]
         },
