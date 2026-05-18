@@ -1425,6 +1425,58 @@ nav.scrolled {
     }
 }
 
+/* Careers / Work With Us Section */
+.careers-section {
+    padding: 120px 50px;
+    background: var(--soft-white);
+    text-align: center;
+}
+
+.careers-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.careers-title {
+    font-family: 'Mongolian Baiti', serif;
+    font-size: 64px;
+    color: var(--primary-black);
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.careers-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(10, 10, 10, 0.75);
+    margin-bottom: 50px;
+}
+
+.careers-cta {
+    display: inline-block;
+    padding: 20px 50px;
+    background: var(--primary-black);
+    color: var(--luxury-gold);
+    font-family: 'Mongolian Baiti', serif;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-black);
+}
+
+.careers-cta:hover {
+    background: var(--luxury-gold);
+    color: var(--primary-black);
+    border-color: var(--luxury-gold);
+    transform: translateY(-2px);
+}
+
+.careers-cta:focus-visible {
+    outline: 2px solid var(--luxury-gold);
+    outline-offset: 4px;
+}
+
 /* Contact Section */
 .contact-section {
     padding: 100px 50px;
@@ -1955,6 +2007,25 @@ select:focus {
 
     .about-section {
         padding: 60px 25px;
+    }
+
+    .careers-section {
+        padding: 70px 25px;
+    }
+
+    .careers-title {
+        font-size: 42px;
+        margin-bottom: 25px;
+    }
+
+    .careers-text {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .careers-cta {
+        padding: 16px 36px;
+        font-size: 18px;
     }
 
     .contact-section {
