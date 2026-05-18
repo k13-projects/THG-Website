@@ -1125,6 +1125,124 @@ nav.scrolled {
     z-index: -1;
 }
 
+/* Vendor Opportunities CTA Section */
+.vendor-cta-section {
+    padding: 40px 50px 80px;
+    background: var(--soft-white);
+}
+
+.vendor-cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: stretch;
+}
+
+.vendor-cta-flip {
+    perspective: 1200px;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+}
+
+.vendor-cta-inner {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.vendor-cta-flip.flipped .vendor-cta-inner {
+    transform: rotateY(180deg);
+}
+
+.vendor-cta-front,
+.vendor-cta-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 320px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.vendor-cta-back {
+    transform: rotateY(180deg);
+    align-items: flex-start;
+}
+
+.vendor-cta-title {
+    font-family: 'Mongolian Baiti', serif;
+    font-size: 48px;
+    color: var(--primary-black);
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.vendor-cta-title .highlight {
+    color: var(--luxury-gold);
+}
+
+.vendor-cta-btn {
+    background: var(--luxury-gold);
+    color: var(--soft-white);
+    border: none;
+    padding: 18px 60px;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(184, 149, 77, 0.25);
+}
+
+.vendor-cta-btn:hover {
+    background: var(--primary-black);
+    color: var(--luxury-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+}
+
+.vendor-cta-email-label {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--medium-gray);
+    margin-bottom: 18px;
+}
+
+.vendor-cta-email {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: var(--luxury-gold);
+    text-decoration: none;
+    word-break: break-word;
+    transition: color 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.vendor-cta-email:hover {
+    color: var(--primary-black);
+    border-bottom-color: var(--luxury-gold);
+}
+
+.vendor-cta-image {
+    min-height: 380px;
+    background: url('../assets/Vendor Opportunities image.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
 /* Timeline Section */
 .timeline-section {
     padding: 80px 50px;
@@ -1954,6 +2072,40 @@ select:focus {
     .about-container {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .vendor-cta-section {
+        padding: 30px 25px 60px;
+    }
+
+    .vendor-cta-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .vendor-cta-title {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+
+    .vendor-cta-btn {
+        padding: 16px 48px;
+        font-size: 20px;
+    }
+
+    .vendor-cta-email {
+        font-size: 22px;
+    }
+
+    .vendor-cta-flip,
+    .vendor-cta-inner,
+    .vendor-cta-front,
+    .vendor-cta-back {
+        min-height: 260px;
+    }
+
+    .vendor-cta-image {
+        min-height: 280px;
     }
 
     .stats-grid {
