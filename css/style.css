@@ -1279,6 +1279,15 @@ nav.scrolled {
     height: 68px; /* -15% from 80px */
 }
 
+.timeline-logo.logo-globalfork {
+    height: 110px; /* round badge, sized for parity with other circular marks */
+}
+
+.timeline-logo.logo-eggnout {
+    height: 32px; /* wide wordmark — sized to stay within timeline card width */
+    max-width: 200px;
+}
+
 /* Mystery placeholder wrapper - stacked layout */
 .timeline-logo-wrapper {
     display: flex;
@@ -1387,6 +1396,15 @@ nav.scrolled {
     .timeline-logo {
         height: 60px;
         max-width: 180px;
+    }
+
+    .timeline-logo.logo-globalfork {
+        height: 85px;
+    }
+
+    .timeline-logo.logo-eggnout {
+        height: 26px;
+        max-width: 160px;
     }
 
     .timeline-logo-wrapper {
