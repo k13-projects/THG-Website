@@ -35,6 +35,41 @@ document.querySelectorAll('.concept-card').forEach(card => {
     });
 });
 
+// ===== Vendor CTA Flip (reveal email on click, auto-flip back) =====
+const vendorCtaBtn = document.getElementById('vendorCtaBtn');
+const vendorCtaFlip = document.getElementById('vendorCtaFlip');
+if (vendorCtaBtn && vendorCtaFlip) {
+    const VENDOR_FLIP_BACK_MS = 6000;
+    let vendorFlipTimer = null;
+
+    const flipBack = () => {
+        vendorCtaFlip.classList.remove('flipped');
+        vendorFlipTimer = null;
+    };
+
+    vendorCtaBtn.addEventListener('click', () => {
+        vendorCtaFlip.classList.add('flipped');
+        if (vendorFlipTimer) clearTimeout(vendorFlipTimer);
+        vendorFlipTimer = setTimeout(flipBack, VENDOR_FLIP_BACK_MS);
+    });
+
+    // Pause the auto-flip while the user is interacting with the email
+    const vendorEmail = vendorCtaFlip.querySelector('.vendor-cta-email');
+    if (vendorEmail) {
+        vendorEmail.addEventListener('mouseenter', () => {
+            if (vendorFlipTimer) {
+                clearTimeout(vendorFlipTimer);
+                vendorFlipTimer = null;
+            }
+        });
+        vendorEmail.addEventListener('mouseleave', () => {
+            if (vendorCtaFlip.classList.contains('flipped') && !vendorFlipTimer) {
+                vendorFlipTimer = setTimeout(flipBack, VENDOR_FLIP_BACK_MS);
+            }
+        });
+    }
+}
+
 // ===== Mobile Menu Toggle =====
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
