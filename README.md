@@ -62,7 +62,7 @@ TigerHospitality_Website_01/
 - **Cosmos Burger** - Premium burgers (Carlsbad + Coming Soon locations)
 - **La Vida** - Healthy eats (Carlsbad + Coming Soon locations)
 - **Good Enough** - Craft cocktails & tapas (Little Italy)
-- **Egg n Out** - Breakfast club (San Clemente - Coming Soon)
+- **Egg & Out** - Breakfast club (San Clemente - Coming Soon)
 
 ### Food Halls
 - **Miramar Food Hall** - San Clemente (Coming Soon)
