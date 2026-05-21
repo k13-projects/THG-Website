@@ -54,7 +54,7 @@ Located in `index.html` lines 77-168:
   - Cosmos Burger (American)
   - La Vida (Healthy, Carlsbad)
   - Good Enough (Cocktails/Spanish Tapas, Little Italy)
-  - Egg n Out (Breakfast)
+  - Egg & Out (Breakfast)
 
 Each restaurant includes: name, description, cuisine type, price range, address, social links.
 
