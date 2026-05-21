@@ -40,7 +40,7 @@
    - Cosmos Burger
    - La Vida
    - Good Enough
-   - Egg n Out
+   - Egg & Out
 3. Claim each location (if not already claimed)
 4. Verify ownership (phone, postcard, or email)
 5. Complete ALL profile fields:
