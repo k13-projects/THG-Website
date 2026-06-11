@@ -5,7 +5,7 @@ A modern, responsive website for TIGER HOSPITALITY featuring premium animations,
 ## Project Structure
 
 ```
-TigerHospitality_Website_01/
+THG-Website/
 ├── css/
 │   └── style.css          # Main stylesheet with animations
 ├── js/
@@ -80,8 +80,8 @@ TigerHospitality_Website_01/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/k13-projects/TigerHospitality_Website_01.git
-cd TigerHospitality_Website_01
+git clone https://github.com/k13-projects/THG-Website.git
+cd THG-Website
 ```
 
 2. Install dependencies:
