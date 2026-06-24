@@ -575,7 +575,6 @@ function initMap() {
                     type: 'foodhall',
                     description: 'Food Hall',
                     concepts: ['Lobster Lab', 'Cosmos Burger', 'La Vida', 'Egg & Out'],
-                    status: 'Coming Soon',
                     instagram: 'https://www.instagram.com/miramarfoodhall/',
                     logo: 'assets/logos/miramar.png'
                 }

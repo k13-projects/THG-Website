@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "PORT=9131 node server.js"
   },
   "keywords": [
     "tiger-hospitality",
